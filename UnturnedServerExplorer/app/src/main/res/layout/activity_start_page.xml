@@ -79,7 +79,8 @@
                 android:id="@+id/search_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/server_search" />
+                android:text="@string/server_search"
+            />
 
             <Space
                 android:layout_width="match_parent"
@@ -105,7 +106,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/settings"
-                android:visibility="visible" />
+                android:visibility="visible"/>
+            <!--android:onClick="clicksettings"-->
 
         </LinearLayout>
     </ScrollView>
