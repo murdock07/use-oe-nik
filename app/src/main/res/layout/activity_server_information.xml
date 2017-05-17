@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cjXKj"
     tools:context="nik.uniobuda.hu.unturnedserverexplorer.ServerInformationActivity">
 
     <TextView
@@ -35,6 +36,11 @@
 
     <Button
         android:id="@+id/button3"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:drawableTint="@color/white"
+        android:background="@color/dark"
+        android:theme="@style/AppTheme.Button"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
@@ -43,6 +49,11 @@
 
     <Button
         android:id="@+id/button4"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:drawableTint="@color/white"
+        android:background="@color/dark"
+        android:theme="@style/AppTheme.Button"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stop"
