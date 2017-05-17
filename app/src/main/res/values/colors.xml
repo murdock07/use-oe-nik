@@ -6,4 +6,5 @@
     <item name="darkblue" type="color">#FF0099CC</item>
     <item name="white" type="color">#FFFFFFFF</item>
     <item name="dark" type="color">#303F9F</item>
+    <item name="black" type="color">#000000</item>
 </resources>
