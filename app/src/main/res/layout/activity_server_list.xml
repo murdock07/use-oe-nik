@@ -54,14 +54,14 @@
             tools:layout_editor_absoluteY="0dp">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Server name" />
 
             <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="clickevent"
@@ -84,14 +84,14 @@
             tools:layout_editor_absoluteY="0dp">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Server name" />
 
             <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="clickevent"
@@ -114,14 +114,14 @@
             tools:layout_editor_absoluteY="0dp">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Server name" />
 
             <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="clickevent"
