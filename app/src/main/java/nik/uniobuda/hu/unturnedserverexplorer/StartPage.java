@@ -54,7 +54,7 @@ public class StartPage extends AppCompatActivity implements LoaderCallbacks<Curs
         
         dbHandler=new DBHandler(this);
         
-        saveButton=(Button) findViewById(R.id.save); //GOMB NÉV MÓDOSÍTÁS
+        saveButton=(Button) findViewById(R.id.email_sign_in_button); //GOMB NÉV MÓDOSÍTÁS
         
         saveButton.setOnClickListener(new View.OnClickListener() { //GOMB NÉV!!!
             @Override
