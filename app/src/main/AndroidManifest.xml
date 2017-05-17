@@ -26,7 +26,7 @@
         <activity android:name=".ServerListActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ServerInformationActivity" />
-        <activity android:name=".ServerSearch+"></activity>
+        <activity android:name=".ServerSearch"></activity>
     </application>
 
 </manifest>
