@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <item name="darkblue" type="color">#FF0099CC</item>
     <item name="white" type="color">#FFFFFFFF</item>
+    <item name="dark" type="color">#303F9F</item>
 </resources>
