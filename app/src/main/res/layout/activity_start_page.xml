@@ -8,7 +8,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/cjXKj"
+
     tools:context="nik.uniobuda.hu.unturnedserverexplorer.StartPage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="LOGIN"
+        android:textSize="25sp"
+        android:drawableTop="@drawable/ic_android_black_24dp_2x"
+        android:drawableTint="@color/white"/>
 
     <!-- Login progress -->
     <ProgressBar
@@ -40,7 +51,9 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:drawableRight="@drawable/ic_face_black_24dp_1x"
+                    android:drawableTint="@color/white"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -57,17 +70,25 @@
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:drawableRight="@drawable/ic_lock_black_24dp_1x"
+                    android:drawableTint="@color/white"/>
 
             </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:background="@color/dark"
+                android:theme="@style/AppTheme.Button"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/action_sign_in"
+                android:drawableTop="@drawable/ic_input_black_24dp_1x"
+                android:drawableTint="@color/white"
                 android:textStyle="bold" />
 
             <Space
@@ -77,9 +98,15 @@
 
             <Button
                 android:id="@+id/search_button"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:background="@color/dark"
+                android:theme="@style/AppTheme.Button"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/server_search"
+                android:drawableTop="@drawable/ic_search_black_24dp_1x"
+                android:drawableTint="@color/white"
                 />
 
             <Space
@@ -87,27 +114,35 @@
                 android:layout_height="wrap_content"
                 android:minHeight="20dp" />
 
-            <Button
+            <!--<Button
                 android:id="@+id/fav_button"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:background="@color/dark"
+                android:theme="@style/AppTheme.Button"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/favourites"
-                android:visibility="visible" />
+                android:visibility="visible" />-->
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="20dp" />
 
-            <Button
+            <!--<Button
                 android:id="@+id/settings_button"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:background="@color/dark"
+                android:theme="@style/AppTheme.Button"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:textColor="@color/white"
                 android:text="@string/settings"
                 android:visibility="visible"/>
-                <!--android:onClick="clicksettings"-->
+                android:onClick="clicksettings"-->
 
         </LinearLayout>
     </ScrollView>
