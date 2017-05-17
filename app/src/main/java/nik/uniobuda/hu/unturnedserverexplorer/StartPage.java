@@ -44,10 +44,10 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class StartPage extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
-    /*public void clicksearch(View view) {
-        Intent intent=new Intent(this,ServerSearch.class);
+    public void clicksearch(View view) {
+        Intent intent=new Intent(this,ServerListActivity.class);
         startActivity(intent);
-    }*/
+    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
