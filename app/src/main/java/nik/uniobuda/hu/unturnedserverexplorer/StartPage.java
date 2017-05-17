@@ -46,11 +46,31 @@ public class StartPage extends AppCompatActivity implements LoaderCallbacks<Curs
         Intent intent=new Intent(this,ServerSearch.class);
         startActivity(intent);
     }*/
+    DBHandler dbHandler;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
+        
+        dbHandler=new DBHandler(this);
+        
+        saveButton=(Button) findViewById(R.id.save); //GOMB NÉV MÓDOSÍTÁS
+        
+        saveButton.setOnClickListener(new View.OnClickListener() { //GOMB NÉV!!!
+            @Override
+            public void onClick(View v) {
 
+                String content=contentEditText.getText().toString().trim();
+
+                if (content.isEmpty()){
+                    Toast.makeText(MainActivity.this,"Üres", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                dbHandler.addUser(content);
+
+
+            }
+        });
     }
 
 
