@@ -1,4 +1,4 @@
-package com.example.hallgato.myapplication;
+package nik.uniobuda.hu.unturnedserverexplorer;
 
 import android.content.ContentValues;
 import android.content.Context;

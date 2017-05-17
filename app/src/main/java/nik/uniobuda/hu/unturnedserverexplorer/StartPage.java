@@ -3,6 +3,7 @@ package nik.uniobuda.hu.unturnedserverexplorer;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.PersistableBundle;
@@ -31,6 +32,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,31 +48,12 @@ public class StartPage extends AppCompatActivity implements LoaderCallbacks<Curs
         Intent intent=new Intent(this,ServerSearch.class);
         startActivity(intent);
     }*/
-    DBHandler dbHandler;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         
-        dbHandler=new DBHandler(this);
-        
-        saveButton=(Button) findViewById(R.id.email_sign_in_button); //GOMB NÉV MÓDOSÍTÁS
-        
-        saveButton.setOnClickListener(new View.OnClickListener() { //GOMB NÉV!!!
-            @Override
-            public void onClick(View v) {
 
-                String content=contentEditText.getText().toString().trim();
-
-                if (content.isEmpty()){
-                    Toast.makeText(MainActivity.this,"Üres", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                dbHandler.addUser(content);
-
-
-            }
-        });
     }
 
 
